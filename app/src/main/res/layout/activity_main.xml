@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingClass">
+
+    <ImageView
+        android:id="@+id/ivMainLandscape"
+        android:layout_width="160dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028"
+        app:srcCompat="@drawable/landscape"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/cbAgreement"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="90dp"
+        android:fontFamily="@font/redrose_variablefont_wght"
+        android:text="Согласен(-а) с условиями использования и политикой конфидециальности"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgRegistration"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtvRegistration"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/new_registr"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtvRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/redrose_variablefont_wght"
+        android:text="Регистрация"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtvHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/redrose_variablefont_wght"
+        android:text="Помощь"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvRegistration"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/ivHelp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/question"
+        app:layout_constraintEnd_toStartOf="@+id/txtvHelp"
+        app:layout_constraintTop_toBottomOf="@+id/txtvRegistration"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/redrose_variablefont_wght"
+        android:text="Вход"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvHelp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/ivLogin"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtvLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtvHelp"
+        app:srcCompat="@drawable/user_icon"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnRegistration"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#E00707"
+        android:onClick="onClickBtnRegistration"
+        android:text="Регистрация"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#EF3B56"
+        app:layout_constraintBottom_toTopOf="@+id/cbAgreement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etxtPhoneNumber"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#E00707"
+        android:ems="10"
+        android:hint="Номер телефона"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etxtName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="#E00707"
+        android:ems="10"
+        android:hint="Имя"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/etxtSurname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etxtSurname"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="#E00707"
+        android:ems="10"
+        android:hint="Фамилия"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/etxtPhoneNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
