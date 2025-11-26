@@ -26,16 +26,12 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        Button button = findViewById(R.id.btnRegistration); // Укажите ID вашей кнопки
+        Button button = findViewById(R.id.btnRegistration);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Создаем интент для перехода
                 Intent intent = new Intent(MainActivity.this, LinearLayoutsActivity.class);
                 startActivity(intent);
-
-                // Опционально: анимация перехода
-                // overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
             }
         });
     }
